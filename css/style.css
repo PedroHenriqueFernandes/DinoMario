@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divScore {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+    color: rgb(255, 217, 0);
+    text-shadow: #333 1px 1px;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: animation-pipe 1.5s linear infinite;
+}
+
+.mario {
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+}
+
+.jump {
+    animation: animation-mario 500ms ease-out;
+}
+
+.cloud {
+    position: absolute;
+    width: 550px;
+    animation: animation-clouds 20s linear infinite;
+}
+
+.dead {
+    animation: animation-death 1200ms ease-out;
+}
+
+#backMarioInit{
+
+    height: 100vh;
+    width: 100vw;
+}
+
+@keyframes animation-pipe {
+    from {
+        left: 100%
+    }
+    to {
+        left: -80px
+    }
+}
+
+@keyframes animation-mario {
+    0% {
+        bottom: 0px
+    }
+    40% {
+        bottom: 180px
+    }
+    50% {
+        bottom: 180px
+    }
+    60% {
+        bottom: 180px
+    }
+    100% {
+        bottom: 0px
+    }
+}
+
+@keyframes animation-clouds {
+    0% {
+        left: 100%
+    }
+    100% {
+        left: -100%
+    }
+}
+
+@keyframes animation-death {
+    40% {
+        bottom: 180px
+    }
+    50% {
+        bottom: 180px
+    }
+    60% {
+        bottom: 180px
+    }
+    100% {
+        bottom: 0px
+    }
+}

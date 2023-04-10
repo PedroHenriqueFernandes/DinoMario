@@ -23,24 +23,49 @@
     animation: animation-pipe 1.5s linear infinite;
 }
 
+@media (max-width: 600px) {
+    .pipe {
+        width: 40px;
+        animation: animation-pipe 1s linear infinite;
+    }
+}
+
 .mario {
     position: absolute;
     bottom: 0;
     width: 120px;
 }
 
+@media(max-width: 600px) {
+    .mario {
+        width: 100px;
+    }
+}
+
 .jump {
     animation: animation-mario 500ms ease-out;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
 }
 
 .cloud {
     position: absolute;
     width: 550px;
     animation: animation-clouds 20s linear infinite;
+    z-index: 1;
 }
 
 .dead {
     animation: animation-death 1200ms ease-out;
+}
+
+.reload{
+    z-index: 6;
 }
 
 #backMarioInit{

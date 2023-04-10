@@ -4,7 +4,8 @@
   "description": "'Jogo\" feito baseado no dinossauro do google e no mario. | 'Game' based on google dinosaur and mario.\r ![image](https://user-images.githubusercontent.com/82915233/188042822-76ace1ed-7d44-4aa8-8c6d-ca586fcc3a4d.png)\r Este 'jogo' foi feito apenas para fins de entretenimento pessoal e 'zoeira' com amigos da faculdade, seu código não foi feito pensando nas boas práticas. \r <br>This 'game' was made only for personal entertainment purposes and 'joking' with college friends, its code was not made with good practices in mind.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",

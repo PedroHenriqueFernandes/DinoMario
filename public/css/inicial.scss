@@ -45,6 +45,10 @@ h1 {
   transform: skew(-15deg);
   letter-spacing: 0.03em;
 
+  @media(max-width: 600px) {
+    font-size: 6em;
+  }
+
   &::after {
     content: "";
     position: absolute;

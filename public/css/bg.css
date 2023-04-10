@@ -15,6 +15,12 @@
     /* background: linear-gradient(#87ceeb, #E0f6ff); */
 }
 
+@media(max-width: 768px) {
+    .game {
+        height: 100vh;
+    }
+}
+
 .game {
     opacity: 1;
     background: none;

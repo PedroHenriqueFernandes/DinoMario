@@ -53,6 +53,12 @@ h1 {
   letter-spacing: 0.03em;
 }
 
+@media(max-width: 600px) {
+  h1 {
+    font-size: 6em;
+  }
+}
+
 h1::after {
   content: "";
   position: absolute;
@@ -90,6 +96,12 @@ h2 {
   text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
   -webkit-transform: rotate(-7deg);
           transform: rotate(-7deg);
+}
+
+@media(max-width: 600px) {
+  h2 {
+    font-size: 3.5em;
+  }
 }
 
 .grid {
